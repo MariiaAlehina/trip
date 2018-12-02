@@ -5,7 +5,7 @@
   <%= @railway_station.title %>
 </p>
 
-<% if @railway_station.routes == nil %>
+<% if @railway_station.routes.empty? %>
   <p>The station is not included in any route</p>
 <% else %>
   <p>the station is included in routes:</p>
