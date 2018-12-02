@@ -5,5 +5,16 @@
   <%= @train.number %>
 </p>
 
+<% if @train.current_route_id.empty? %>
+  <p>The train has no route</p>
+<% else %>
+  <p>The train's route:</p>
+  <ul>
+    <% @train.current_route_id.each do |route| %>
+      <li><%= route.title %></li>
+    <% end %>
+  </ul>
+<% end %>
+
 <%= link_to 'Edit', edit_train_path(@train) %> |
 <%= link_to 'Back', trains_path %>
