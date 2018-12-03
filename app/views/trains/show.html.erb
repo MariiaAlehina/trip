@@ -23,6 +23,16 @@
   <% end %>
 </p>
 
+<p>
+  <strong>The train's cars:</strong>
+  <% if @train.passenger_cars.present?%>
+    <%= @train.passenger_cars.map(&:car_type)%>
+    <%= @train.passenger_cars.map(&:quantity_top_seats)%>
+    <%= @train.passenger_cars.map(&:quantity_lower_seats)%>
+  <% else %>
+    The train has no cars
+  <% end %>
+</p>
 
 <%= link_to 'Edit', edit_train_path(@train) %> |
 <%= link_to 'Back', trains_path %>
