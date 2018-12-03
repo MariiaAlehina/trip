@@ -12,13 +12,13 @@
   <ul>
     <% if @route.railway_stations.empty? %>
       Empty
-    <%else%>
+    <% else %>
       <% @route.railway_stations.each do |station| %>
         <li><%= station.title %></li>
   </ul>
-  <%end%>
-
+  <% end %>
 </p>
+
 <!--<p>-->
 <%# if @route.trains.empty? %>
 <!--  Routes list empty-->
