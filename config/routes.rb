@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   resources :trains
   resources :railway_stations
   resources :routes
+  resources :passenger_cars
+
 
   
   # The priority is based upon order of creation: first created -> highest priority.

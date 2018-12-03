@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Car type:</strong>
+  <%= @passenger_car.car_type %>
+</p>
+
+<p>
+  <strong>Car hooked up to train:</strong>
+  <% if @passenger_car.train.present?%>
+    <%= @passenger_car.train.number %>
+  <% else %>
+    No train
+  <% end %>
+</p>
+
+
+<%= link_to 'Edit', edit_passenger_car_path(@passenger_car) %> |
+<%= link_to 'Back', passenger_cars_path %>
