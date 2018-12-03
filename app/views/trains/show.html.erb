@@ -13,10 +13,11 @@
     No station
   <% end %>
 </p>
+
 <p>
   <strong>The train's route:</strong>
-  <% if @train.current_route.present?%>
-    <%= @train.current_route.title %>
+  <% if @train.route.present?%>
+    <%= @train.route.title %>
   <% else %>
     The train has no route
   <% end %>

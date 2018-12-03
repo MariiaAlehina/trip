@@ -15,21 +15,19 @@
     <% else %>
       <% @route.railway_stations.each do |station| %>
         <li><%= station.title %></li>
+      <% end %>
   </ul>
   <% end %>
 </p>
 
-<!--<p>-->
-<%# if @route.trains.empty? %>
-<!--  Routes list empty-->
-<%# else %>
-<!--  <ul>-->
-    <%# @route.trains.each do |train| %>
-<!--      <li><%#= train.number %></li>-->
-    <%# end %>
-<!--  </ul>-->
-<%# end %>
-<!--</p>-->
+<p>
+  <strong>Train on the station:</strong>
+<% if @route.trains.present? %>
+      <%= @route.trains.title %>
+    <% else %>
+      No trains
+  <% end %>
+</p>
 
 <%= link_to 'Edit', edit_route_path(@route) %> |
 <%= link_to 'Back', routes_path %>
