@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37029f1a-c30d-4cf9-a540-0dc9b2bcfb52" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/passenger_car.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20181203105757_create_passenger_cars.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20181203114633_add_passenger_cars_to_train.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/git_branches" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/passenger_cars.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/tickets.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/users.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/passenger_car_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/ticket_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/user_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/routes/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/routes/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/git_branches" beforeDir="false" afterPath="$PROJECT_DIR$/git_branches" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -36,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/app/models/passenger_car.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -51,19 +43,10 @@
         </entry>
       </file>
       <file leaf-file-name="_form.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/passenger_cars/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/trains/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -72,16 +55,34 @@
         <entry file="file://$PROJECT_DIR$/app/controllers/trains_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="381">
-              <caret line="71" column="83" lean-forward="true" selection-start-line="71" selection-start-column="83" selection-end-line="71" selection-end-column="83" />
+              <caret line="71" column="83" selection-start-line="71" selection-start-column="83" selection-end-line="71" selection-end-column="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/trains/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schema.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/schema.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/trains/show.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/views/routes/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="37" column="34" lean-forward="true" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+            <state relative-caret-position="293">
+              <caret line="22" selection-start-line="22" selection-end-line="30" />
             </state>
           </provider>
         </entry>
@@ -90,7 +91,7 @@
         <entry file="file://$PROJECT_DIR$/app/models/train.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -99,16 +100,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/railway_stations/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/passenger_cars/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -117,7 +109,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/passenger_cars/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="39" lean-forward="true" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -158,7 +150,6 @@
         <option value="$PROJECT_DIR$/app/views/railway_stations/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/railway_stations/_railway_station.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20181129154053_add_railway_station_id_to_trains.rb" />
-        <option value="$PROJECT_DIR$/app/views/routes/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20181203105757_create_passenger_cars.rb" />
@@ -178,6 +169,7 @@
         <option value="$PROJECT_DIR$/app/controllers/trains_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/trains/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/trains/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/routes/show.html.erb" />
       </list>
     </option>
   </component>
@@ -190,7 +182,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="782" />
     <option name="height" value="736" />
   </component>
@@ -271,12 +263,6 @@
               <item name="trip" type="462c0819:PsiDirectoryNode" />
               <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="trip" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="migrate" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -286,7 +272,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rails_tutorial" />
+    <property name="last_opened_file_path" value="$USER_HOME$/cinematronix" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -341,7 +327,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543771947857</updated>
-      <workItem from="1543771949291" duration="31323000" />
+      <workItem from="1543771949291" duration="33429000" />
     </task>
     <task id="LOCAL-00001" summary="12">
       <created>1543778133154</created>
@@ -396,10 +382,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31323000" />
+    <option name="totallyTimeSpent" value="33429000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1368" height="742" extended-state="7" />
+    <frame x="-1" y="0" width="1368" height="742" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -407,8 +393,8 @@
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.08943089" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28863636" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.4113821" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28863636" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3284553" />
@@ -470,13 +456,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/routes/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -656,13 +635,6 @@
     <entry file="file://$PROJECT_DIR$/db/migrate/20181202190325_add_tickets_to_train.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="53" column="34" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20181129154053_add_railway_station_id_to_trains.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -708,14 +680,14 @@
     <entry file="file://$PROJECT_DIR$/app/views/passenger_cars/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="39" lean-forward="true" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/railway_stations/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -729,35 +701,49 @@
     <entry file="file://$PROJECT_DIR$/app/models/passenger_car.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/train.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/trains_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="381">
-          <caret line="71" column="83" lean-forward="true" selection-start-line="71" selection-start-column="83" selection-end-line="71" selection-end-column="83" />
+          <caret line="71" column="83" selection-start-line="71" selection-start-column="83" selection-end-line="71" selection-end-column="83" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/trains/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/trains/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
-          <caret line="37" column="34" lean-forward="true" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/routes/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="22" selection-start-line="22" selection-end-line="30" />
         </state>
       </provider>
     </entry>
