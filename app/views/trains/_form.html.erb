@@ -11,12 +11,6 @@
     <%= f.collection_select :current_station_id, RailwayStation.all, :id, :title %>
   </div>
 
-  <div class="field">
-    <%= f.label :passenger_car %>
-    <%= f.collection_select :passenger_car_id, PassengerCar.all, :id, :type_car, :quantity_lower_seats, :quantity_top_seats %>
-  </div>
-
-
   <div class="actions">
     <%= f.submit "#{ @train.new_record? ? 'Create' : 'Edite' }" %>
   </div>

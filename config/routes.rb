@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
-  resources :trains
-  resources :railway_stations
+  resources :railway_stations do
+    patch :update_position, on: :member
+  end
   resources :routes
-  resources :passenger_cars
+  resources :trains do
+    resources :passenger_cars, shallow: true
+  end
 
+  resource :search, only: [:new, :show, :edit]
 
   
   # The priority is based upon order of creation: first created -> highest priority.
