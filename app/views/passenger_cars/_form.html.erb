@@ -9,10 +9,12 @@
     <%= f.text_field :quantity_top_seats %>
     <%= f.label :quantity_lower_seats %><br>
     <%= f.text_field :quantity_lower_seats %>
+    <%= f.label :car_number %><br>
+    <%= f.text_field :car_number %>
   </div>
 
   <div class="field">
-    <%= f.label :current_train %>
+    <%= f.label :train %>
     <%= f.collection_select :train_id, Train.all, :id, :number%>
   </div>
 
@@ -20,3 +22,4 @@
     <%= f.submit "#{ @passenger_car.new_record? ? 'Create' : 'Edite' }" %>
   </div>
 <% end %>
+

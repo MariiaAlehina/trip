@@ -12,17 +12,16 @@ class RoutesController < ApplicationController
   end
 
   def create
-    @route = Route.create(route_params)
-
-    if @route
-      redirect_to route_path(@route)
+    @route = Route.new(route_params)
+    if @route.save
+      redirect_to @route
     else
       render :new
     end
   end
 
-  def edit
 
+  def edit
   end
 
   def update
@@ -44,6 +43,6 @@ class RoutesController < ApplicationController
   end
 
   def route_params
-    params.require(:route).permit(:title)
+    params.require(:route).permit(:title, railway_station_ids: [] )
   end
 end
