@@ -1,0 +1,155 @@
+#sidebar {
+
+    float: left;
+    width: 18%;
+    height: 200%;
+
+
+}
+
+#content {
+
+    float: right;
+    width: 100%;
+    height: auto;
+background: white;
+    border-radius:10px;
+}
+
+#container {
+padding:120px;
+    margin: auto auto;
+    text-align: center;
+    width: 80%;
+    height: auto;
+
+
+}
+
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+a:active,a:focus{outline: none;}
+nav{display:block;
+margin-top: 50px;
+background: #FFDAB9;
+    border-radius: 5px;
+    height:90px;
+    text-align: center;
+}
+
+.menu{display:block;}
+
+.menu li{display: inline-block;
+position: relative;
+z-index:100;}
+
+.menu li:first-child{margin-left:0;}
+
+.menu li a {font-weight:600;
+text-decoration:none;
+padding:35px;
+display:block;
+color:#ffffff;
+
+-webkit-transition: all 0.2s ease-in-out 0s;
+   -moz-transition: all 0.2s ease-in-out 0s;
+   -o-transition: all 0.2s ease-in-out 0s;
+   -ms-transition: all 0.2s ease-in-out 0s;
+   transition: all 0.2s ease-in-out 0s;
+}
+
+.menu li a:hover, .menu li:hover > a{color: #ffdff5;
+background:#FFDAB9;}
+
+.menu ul {display: none;
+margin: 0;
+padding: 0;
+width: 196px;
+position: absolute;
+top: 90px;
+left: 0px;
+background: #cffffe;
+}
+
+.menu ul li {display:block;
+float: none;
+background:none;
+margin:0;
+padding:0;
+}
+.menu ul li a {font-size:18px;
+font-weight:normal;
+display:block;
+color: #79344f;
+border-left:3px solid #ffdff5;
+background: #ffcdc0;}
+
+.menu ul li a:hover, .menu ul li:hover > a{
+background:#f0f0f0;
+border-left:3px solid #ffeae2;
+color: #79344f;
+}
+
+.menu li:hover > ul{ display: block;}
+.menu ul ul {left: 195px;
+	top: 0px;
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+.mainWrap{width:768px;}
+.menu ul {top:37px;}
+.menu li a{font-size:15px;
+padding:10px;}
+}
+
+@media (max-width: 767px) {
+
+.mainWrap{width:auto;padding:50px 20px;}
+
+.menu{display:none;}
+
+
+nav{margin:0;
+background:none;}
+
+.menu li{display:block;
+margin:0;}
+
+.menu li a {background:#ffffff;
+color:#797979;
+border-top:100px solid #e0e0e0;
+border-left:3px solid #ffffff;}
+
+.menu li a:hover, .menu li:hover > a{
+background:#f0f0f0;
+color:#797979;
+border-left:3px solid #ffe2ca;}
+
+.menu ul {display:block;
+position:relative;
+top:0;
+left:0;
+width:100%;}
+
+.menu ul ul {left:0;}
+
+}
+
+@media (max-width: 480px) {
+
+}
+
+
+@media (max-width: 320px) {
+}
+#top_nav{
+  top: 0px;
+  position: fixed;
+  z-index: 999;
+    height:50px;
+    width:100%
+ }
