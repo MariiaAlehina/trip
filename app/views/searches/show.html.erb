@@ -1,0 +1,11 @@
+<h1>loshara</h1>
+
+<div>
+  <ul>
+    <% @routes.each do |route| %>
+      <li>
+        <strong>Route <%= route.id %></strong>
+        <p>Arrive time <%= @first_station.time_arrive(route) %></p>
+        <p>Departure time <%= @last_station.departure_time(route) %></p>
+
+</div>

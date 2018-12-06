@@ -1,0 +1,25 @@
+<h3>Trains</h3>
+        <ul>
+          <% route.trains.each do |train| %>
+            <li>
+              <p><%= train.number %></p>
+              <p><%= link_to 'Buy ticket', new_train_ticket_path(train, start_station:
+                  @first_station.id, end_station: @last_station.id) %></p>
+            </li>
+          <% end %>
+        </ul>
+      </li>
+
+  </ul>
+    <div>
+      <p>First Station</p>
+      <%= select_tag :first_station, options_from_collection_for_select(@stations, :id, :title) %>
+    </div>
+    <div>
+      <p>Last Station</p>
+      <%= select_tag :last_station, options_from_collection_for_select(@stations, :id, :title) %>
+    </div>
+    <div>
+      <p><%= submit_tag "Search" %></p>
+    </div>
+    <% end %>
