@@ -61,6 +61,13 @@ class TrainsController < ApplicationController
     end
   end
 
+  def search_train
+    @train = SearchTrains.new(current_station).search
+    @list = current_train
+    @list.train << @train
+    @train.save
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_train
