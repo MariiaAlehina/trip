@@ -26,7 +26,7 @@
 <p>
   <strong>The train's cars:</strong>
 <ul>
-  <li><% @train.passenger_cars.each do |car|%></li>
+      <% @train.passenger_cars.each do |car|%>
       <li><%= link_to "Car №#{car.car_number}", car %></li>
     <% end %>
 </ul>

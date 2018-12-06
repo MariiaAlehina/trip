@@ -67,6 +67,12 @@ class RailwayStationsController < ApplicationController
     redirect_to @route
   end
 
+  def update_time
+    @route = Route.find(params[:route_id])
+    @railway_station.update_time(@route, params[:time_arrive], params[:departure_time])
+    redirect_to @route
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_railway_station
