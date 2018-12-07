@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     patch :update_time, on: :member
   end
   resources :routes
+
   resources :trains do
     resources :passenger_cars, shallow: true
   end

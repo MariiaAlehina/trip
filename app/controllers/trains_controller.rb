@@ -1,10 +1,12 @@
 class TrainsController < ApplicationController
+  attr_reader :current_station
   before_action :set_train, only: [:show, :edit, :update, :destroy]
-
+  require 'services/search_trains'
   # GET /trains
   # GET /trains.json
   def index
     @trains = Train.all
+    @train = SearchTrains.new(current_station).search
   end
 
   # GET /trains/1
@@ -61,12 +63,9 @@ class TrainsController < ApplicationController
     end
   end
 
-  def search_train
-    @train = SearchTrains.new(current_station).search
-    @list = current_train
-    @list.train << @train
-    @train.save
-  end
+  # def search_train
+  #   @train = SearchTrains.new(current_station).search
+  # end
 
   private
     # Use callbacks to share common setup or constraints between actions.
