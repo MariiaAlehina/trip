@@ -11,14 +11,6 @@ class Route < ActiveRecord::Base
   scope :with_station, -> (station) { Route.joins(:railway_stations).where(
       'railway_stations.id = ?', station.id) }
 
-  def first_station
-    railway_stations.first
-  end
-
-  def last_station
-    railway_stations.last
-  end
-
   def self.search_routes(first_station, last_station)
     Route.with_station(first_station) &
     Route.with_station(last_station)

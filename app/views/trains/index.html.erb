@@ -1,7 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Trains</h1>
-
+<p>
+  <%= form_tag(method: "get") do %>
+    <%= label_tag(:title, "Test cur station:") %>
+    <%= text_field_tag(:title) %>
+    <%= submit_tag("Search") %>
+  <% end %>
+</p>
 <table>
   <thead>
     <tr>

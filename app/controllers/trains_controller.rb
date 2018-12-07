@@ -61,6 +61,13 @@ class TrainsController < ApplicationController
     end
   end
 
+  def search_train
+    @train = SearchTrains.new(current_station).search
+    @list = current_train
+    @list.train << @train
+    @train.save
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_train
@@ -69,6 +76,6 @@ class TrainsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def train_params
-      params.require(:train).permit(:number, :current_station_id, :passenger_car_id)
+      params.require(:train).permit(:number, :current_station_id, :passenger_car_id, :current_route_id)
     end
 end
