@@ -1,12 +1,17 @@
 class TrainsController < ApplicationController
   attr_reader :current_station
   before_action :set_train, only: [:show, :edit, :update, :destroy]
-  require 'services/search_trains'
   # GET /trains
   # GET /trains.json
+  # byebug
   def index
-    @trains = Train.all
-    @train = SearchTrains.new(current_station).search
+    if params[:q]
+      trains = SearchTrains.new(params).trains
+    else
+      trains = Train.all
+    end
+    binding.pry
+    @trains = trains
   end
 
   # GET /trains/1
