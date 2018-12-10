@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Listing Routes</h1>
 
 <table>
@@ -14,7 +12,7 @@
   <% @routes.each do |route| %>
     <tr>
       <td><%= route.title %></td>
-      <td><%= link_to 'Show', route %></td>
+      <td><%= link_to 'Show', route_path(route) %></td>
       <td><%= link_to 'Edit', edit_route_path(route) %></td>
       <td><%= link_to 'Destroy', route, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>

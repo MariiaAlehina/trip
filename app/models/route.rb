@@ -21,7 +21,7 @@ class Route < ActiveRecord::Base
   end
 
   def last_station
-    last_station = railway_stations.last
+    @last_station = railway_stations.last
   end
 
   private

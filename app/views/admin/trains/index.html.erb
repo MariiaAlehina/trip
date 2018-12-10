@@ -1,9 +1,17 @@
-<p id="notice"><%= notice %></p>
 <h1>Listing Trains</h1>
+
+
 <p>
   <%= form_tag({:controller => 'trains', :action => 'index'}, :method => 'get') do %>
-    <%= label_tag(:q, "Test cur station:") %>
+    <%= label_tag(:q, "First station:") %>
     <%= text_field_tag(:q) %>
+  <% end %>
+</p>
+
+<p>
+  <%= form_tag({:controller => 'trains', :action => 'index'}, :method => 'get') do %>
+    <%= label_tag(:p, "Last station:") %>
+    <%= text_field_tag(:p) %>
     <%= submit_tag("Search") %>
   <% end %>
 </p>
@@ -24,3 +32,4 @@
 <br>
 
 <%= link_to 'New Train', new_train_path %>
+
