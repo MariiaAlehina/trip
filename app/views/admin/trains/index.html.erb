@@ -1,0 +1,35 @@
+<h1>Listing Trains</h1>
+
+
+<p>
+  <%= form_tag({:controller => 'trains', :action => 'index'}, :method => 'get') do %>
+    <%= label_tag(:q, "First station:") %>
+    <%= text_field_tag(:q) %>
+  <% end %>
+</p>
+
+<p>
+  <%= form_tag({:controller => 'trains', :action => 'index'}, :method => 'get') do %>
+    <%= label_tag(:p, "Last station:") %>
+    <%= text_field_tag(:p) %>
+    <%= submit_tag("Search") %>
+  <% end %>
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%= render @trains %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Train', new_train_path %>
+

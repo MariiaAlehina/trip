@@ -1,10 +1,17 @@
-class TrainsController < ApplicationController
+class Admin::TrainsController < Admin::BaseController
+  attr_reader :current_station
   before_action :set_train, only: [:show, :edit, :update, :destroy]
-
   # GET /trains
   # GET /trains.json
+
   def index
-    @trains = Train.all
+    if params[:q] || params[:p]
+      trains = SearchTrains.new(params).trains
+    else
+      trains = Train.all
+    end
+
+    @trains = trains
   end
 
   # GET /trains/1
@@ -61,12 +68,9 @@ class TrainsController < ApplicationController
     end
   end
 
-  def search_train
-    @train = SearchTrains.new(current_station).search
-    @list = current_train
-    @list.train << @train
-    @train.save
-  end
+  # def search_train
+  #   @train = SearchTrains.new(current_station).search
+  # end
 
   private
     # Use callbacks to share common setup or constraints between actions.

@@ -16,6 +16,14 @@ class Route < ActiveRecord::Base
     Route.with_station(last_station)
   end
 
+  def first_station
+    @first_station = railway_stations.first
+  end
+
+  def last_station
+    @last_station = railway_stations.last
+  end
+
   private
 
   def set_name

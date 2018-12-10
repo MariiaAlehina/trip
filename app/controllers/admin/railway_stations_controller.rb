@@ -1,4 +1,4 @@
-class RailwayStationsController < ApplicationController
+class Admin::RailwayStationsController < Admin::BaseController
   before_action :set_railway_station, only: [:show, :edit, :update, :destroy, :update_position]
 
   # GET /railway_stations
@@ -8,7 +8,7 @@ class RailwayStationsController < ApplicationController
   end
 
   # GET /railway_stations/1
-  # GET /railway_stations/1.json
+  # GET /railway_stations/1.jsonrails
   def show
   end
 

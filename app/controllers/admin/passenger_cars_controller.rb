@@ -1,4 +1,4 @@
-class PassengerCarsController < ApplicationController
+class Admin::PassengerCarsController < Admin::BaseController
   before_action :set_train, only: [:new, :create]
 
   def new
@@ -31,5 +31,4 @@ class PassengerCarsController < ApplicationController
                                            :quantity_lower_seats, :car_type)
   end
 end
-# :side_top_seats,
-#     :side_lower_seats, :sitting_places,
+
