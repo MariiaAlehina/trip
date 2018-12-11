@@ -1,10 +1,10 @@
 <p>
-  <strong>Car type:</strong>
+  <strong>Тип вагона:</strong>
   <%= @passenger_car.car_type %>
 </p>
 
 <p>
-  <strong>Car hooked up to train:</strong>
+  <strong>Вагон прицеплен к поезду:</strong>
   <% if @passenger_car.train.present?%>
     <%= @passenger_car.train.number %>
   <% else %>
@@ -12,6 +12,4 @@
   <% end %>
 </p>
 
-
-<!--<%#= link_to 'Edit', edit_passenger_cars_path(@passenger_car) %> |-->
-<%#= link_to 'Back', train_passenger_cars_path %>
+<%#= link_to t('common.back'), admin_train_passenger_cars_path %>

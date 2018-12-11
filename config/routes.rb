@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root to: "welcome#index"
 
   resource :tickets, only: [:create, :show]
+  resources :trains, only: [:show]
 
   namespace :admin do
     resources :routes

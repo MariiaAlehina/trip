@@ -1,6 +1,30 @@
-<h1>Editing Route</h1>
+<h1>Редактирование дороги</h1>
 
 <%= render 'form' %>
+<tbody>
+    <% @route.railway_stations.ordered.each do |station| %>
+      <tr>
+        <td><%= station.title %></td>
+        <td>
+        <p>Позиция</p>
+          <%= form_tag update_position_admin_railway_station_path(station), method: :patch, class: 'form-group' do %>
+          <%= number_field_tag :position %>
+          <%= hidden_field_tag :route_id, @route.id %>
+            <%= submit_tag "Change" %>
+          <% end %>
+        </td>
+        <td>
+        <p>Время</p>
+          <%= form_tag update_time_admin_railway_station_path(station), method: :patch, class: 'form-group' do %>
+            <%= datetime_field_tag :time_arrive %>
+            <%= datetime_field_tag :departure_time %>
+            <%= hidden_field_tag :route_id, @route.id %>
+            <%= submit_tag "Change" %>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+</tbody>
 
-<%= link_to 'Show', @route %> |
-<%= link_to 'Back', routes_path %>
+<%= link_to t('common.show'), [:admin, @route] %> |
+<%= link_to t('common.back'), admin_routes_path %>

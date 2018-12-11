@@ -1,19 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
+  <strong>Название:</strong>
   <%= @route.title %>
 </p>
 
 <p>
-  <strong> Stations:</strong>
+  <strong> Станции:</strong>
   <% if @route.railway_stations.empty? %>
     Empty
   <% else %>
   <table>
     <thead>
     <tr>
-      <td width="60px">Title:</td>
+      <td width="60px">Название станций:</td>
       <td>Position</td>
       <td>Time array</td>
       <td>Departure time</td>
@@ -23,21 +23,9 @@
     <% @route.railway_stations.ordered.each do |station| %>
       <tr>
         <td><%= station.title %></td>
-        <td>
-          <%= form_tag update_position_railway_station_path(station), method: :patch, class: 'form-group' do %>
-          <%= number_field_tag :position %>
-          <%= hidden_field_tag :route_id, @route.id %>
-            <%= submit_tag "Change" %>
-          <% end %>
-        </td>
-        <td>
-          <%= form_tag update_time_railway_station_path(station), method: :patch, class: 'form-group' do %>
-            <%= datetime_field_tag :time_arrive %>
-            <%= datetime_field_tag :departure_time %>
-            <%= hidden_field_tag :route_id, @route.id %>
-            <%= submit_tag "Change" %>
-          <% end %>
-        </td>
+        <td><%= station.position %></td>
+        <td><%= station.time_arrive %></td>
+        <td><%= station.departure_time %></td>
       </tr>
     <% end %>
     </tbody>
@@ -45,5 +33,5 @@
 <% end %>
 </p>
 
-<%= link_to 'Edit', edit_route_path(@route) %> |
-<%= link_to 'Back', routes_path %>
+<%= link_to t('common.edit'), edit_admin_route_path(@route) %> |
+<%= link_to t('common.back'), admin_routes_path %>

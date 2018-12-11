@@ -1,0 +1,28 @@
+ru:
+  common:
+    back: 'Назад'
+    show: 'Показать'
+    edit: 'Редактировать'
+    destroy: 'Удалить'
+    errors: 'Возникли ошибки'
+  admin:
+    railway_stations:
+      new:
+        title: 'Новая станция'
+      form:
+        submit: '%{action} станцию'
+    routes:
+          new:
+            title: 'Дорога'
+          form:
+            submit: '%{action} дорогу'
+    passenger_cars:
+      new:
+        title: 'Новый вагон'
+      form:
+        submit: '%{action} вагон'
+    trains:
+      new:
+        title: 'Новый вагон'
+      form:
+        submit: '%{action} вагон'
