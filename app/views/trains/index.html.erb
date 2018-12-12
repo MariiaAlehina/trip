@@ -1,6 +1,4 @@
-<h1>Поезда:</h1>
-
-
+<h1>Список возможных поездов</h1>
 <p>
   <%= form_tag({:controller => 'trains', :action => 'index'}, :method => 'get') do %>
     <%= label_tag(:q, "Первая станция:") %>
@@ -15,7 +13,6 @@
     <%= submit_tag("Search") %>
   <% end %>
 </p>
-
 <table>
   <thead>
     <tr>
@@ -28,8 +25,3 @@
     <%= render @trains %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'Новый поезд', new_admin_train_path %>
-

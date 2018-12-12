@@ -23,15 +23,6 @@
   <% end %>
 </p>
 
-<p>
-  <strong>Вагоны поезда:</strong>
-<ul>
-      <% @train.passenger_cars.each do |car|%>
-        <li><%= link_to "Car №#{car.car_number}", [:admin, car] %></li>
-    <% end %>
-</ul>
-  <%= link_to "Add car", new_admin_train_passenger_car_path(@train) %>
-</p>
 
-<%= link_to t('common.edit'), edit_admin_train_path(@train) %> |
-<%= link_to t('common.back'), admin_trains_path %>
+<%= link_to 'Buy ticket', new_train_ticket_path(@train)%>
+

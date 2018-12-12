@@ -1,4 +1,5 @@
 class Ticket < ActiveRecord::Base
+  validates :user_first_name, :user_last_name, presence: true
   belongs_to :user
-  belongs_to :current_train, class_name: 'Train', foreign_key: :current_train_id
+  belongs_to :train
 end

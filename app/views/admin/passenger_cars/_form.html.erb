@@ -1,35 +1,34 @@
-<%= form_for [@train, @passenger_car] do |f| %>
+<%= form_for ([:admin, @train, @passenger_car]) do |f| %>
 
   <%= render 'common/errors', resourse: @passenger_car %>
 
   <div class="field">
-    <%= f.label :car_type %><br>
+    <%= f.label :car_type, "Тип вагона"%><br>
     <%= f.text_field :car_type %>
   </div>
 
+   <div class="field">
+     <%= f.label :car_number, "Номер вагона"%><br>
+     <%= f.text_field :car_number %>
+   </div>
+
   <div class="field">
-    <%= f.label :quantity_top_seats %><br>
+    <%= f.label :quantity_top_seats, "Количество верхних мест"%><br>
     <%= f.text_field :quantity_top_seats %>
   </div>
 
   <div class="field">
-    <%= f.label :quantity_lower_seats %><br>
+    <%= f.label :quantity_lower_seats, "Количество нижних мест"%><br>
     <%= f.text_field :quantity_lower_seats %>
   </div>
 
   <div class="field">
-    <%= f.label :car_number %><br>
-    <%= f.text_field :car_number %>
-  </div>
-
-  <div class="field">
-    <%= f.label :train %>
+    <%= f.label :train, "Поезд"%>
     <%= f.collection_select :train_id, Train.all, :id, :number%>
   </div>
 
   <div class="actions">
-    <%= f.submit "#{ @passenger_car.new_record? ? 'Create' : 'Edite' }" %>
+    <%= f.submit t('.submit', action: @passenger_car.new_record? ? 'Создать' : 'Изменить') %>
   </div>
-
 <% end %>
 

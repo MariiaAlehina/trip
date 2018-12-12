@@ -1,1 +1,22 @@
 <p>Ticket bought: <%= @ticket.user.email %></p>
+
+<h1>Tickets</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>User</th>
+    <th>User name</th>
+    <th>User last name</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <%= render @ticket %>
+  </tbody>
+
+</table>
+
+<br>
+
+<%= link_to 'Вернуться назад', trains_path %>

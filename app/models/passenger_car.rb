@@ -8,5 +8,4 @@ class PassengerCar < ActiveRecord::Base
   scope :coupe, -> { where(car_type: 'CoupeCar') }
   scope :sv, -> { where(car_type: 'SVCar') }
   scope :sitting, -> { where(car_type: 'SittingCar') }
-  # default_scope { order(:car_number) }
 end

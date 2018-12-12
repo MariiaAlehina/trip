@@ -1,0 +1,19 @@
+<%= form_for ([@train, @ticket]) do |f| %>
+
+  <%= render 'common/errors', resourse: @ticket %>
+
+  <div class="field">
+    <%= f.label :user_first_name %><br>
+    <%= f.text_field :user_first_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :user_last_name %><br>
+    <%= f.text_field :user_last_name %>
+  </div>
+
+   <div class="actions">
+       <%= f.submit "Купить" %>
+   </div>
+<% end %>
+

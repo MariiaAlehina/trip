@@ -4,7 +4,8 @@ class RailwayStation < ActiveRecord::Base
   has_many :railway_stations_routes
   has_many :routes, through: :railway_stations_routes
 
-  scope :ordered, -> { select('railway_stations.*, railway_stations_routes.position')
+  scope :ordered, -> { select('railway_stations.*, railway_stations_routes.position,
+        railway_stations_routes.time_arrive, railway_stations_routes.departure_time')
                            .joins(:railway_stations_routes)
                            .order("railway_stations_routes.position").uniq }
 
@@ -22,11 +23,11 @@ class RailwayStation < ActiveRecord::Base
     station_route(route).try(:position)
   end
 
-  def time_arrive(route)
+  def time_arrive_in(route)
     station_route(route).try(:time_arrive)
   end
 
-  def departure_time(route)
+  def departure_time_in(route)
     station_route(route).try(:departure_time)
   end
 

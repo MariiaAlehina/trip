@@ -1,0 +1,32 @@
+ru:
+  activerecord:
+    models:
+      railway_station: 'Станция'
+      train: 'Поезд'
+      passenger_sar: 'Вагоны'
+      route: 'Дорога'
+      ticket: 'Билет'
+      user: 'Пользователь'
+    atributes:
+      railway_station:
+        title: 'Название'
+      train:
+        number: 'Номер поезда'
+      passenger_sar:
+        car_type: 'Тип вагона'
+        quantity_top_seats: 'Количество верхних мест'
+        quantity_lower_seats: 'Количество нижних мест'
+        car_number: 'Номер вагона'
+        side_top_seats: 'Количество боковых верхних мест'
+        side_lower_seats: 'Количество боковых нижних мест'
+        sitting_places: 'Количество сидячих мест'
+      route:
+        title: 'Дорога'
+      ticket:
+        ticket_number: 'Номер билета'
+      user:
+        user_name: 'Имя пользователя'
+    errors:
+      messages:
+        blank: 'Должно быть указано'
+

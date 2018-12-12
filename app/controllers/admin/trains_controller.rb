@@ -49,7 +49,7 @@ class Admin::TrainsController < Admin::BaseController
   def update
     respond_to do |format|
       if @train.update(train_params)
-        format.html { redirect_to @train, notice: 'Train was successfully updated.' }
+        format.html { redirect_to admin_train_path(@train), notice: 'Train was successfully updated.' }
         format.json { render :show, status: :ok, location: @train }
       else
         format.html { render :edit }
@@ -63,7 +63,7 @@ class Admin::TrainsController < Admin::BaseController
   def destroy
     @train.destroy
     respond_to do |format|
-      format.html { redirect_to trains_url, notice: 'Train was successfully destroyed.' }
+      format.html { redirect_to admin_trains_path(@trains), notice: 'Train was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -80,6 +80,6 @@ class Admin::TrainsController < Admin::BaseController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def train_params
-      params.require(:train).permit(:number, :current_station_id, :passenger_car_id, :current_route_id)
+      params.require(:train).permit(:number, :current_station_id, :passenger_car_id, :current_route_id, :train_id)
     end
 end
