@@ -3,8 +3,12 @@ Rails.application.routes.draw do
 
   root to: "welcome#index"
 
-  resource :tickets, only: [:create, :show]
-  resources :trains, only: [:show]
+  resource :tickets, only: [:index, :create]
+
+  resources :trains, only: [:show, :index] do
+    resources :tickets, shallow: true
+  end
+
 
   namespace :admin do
     resources :routes

@@ -80,6 +80,6 @@ class Admin::TrainsController < Admin::BaseController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def train_params
-      params.require(:train).permit(:number, :current_station_id, :passenger_car_id, :current_route_id)
+      params.require(:train).permit(:number, :current_station_id, :passenger_car_id, :current_route_id, :train_id)
     end
 end

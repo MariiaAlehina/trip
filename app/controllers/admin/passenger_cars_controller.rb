@@ -2,7 +2,6 @@ class Admin::PassengerCarsController < Admin::BaseController
   before_action :set_train, only: [:new, :create]
 
   def new
-    @train = Train.find(params[:train_id])
     @passenger_car = PassengerCar.new
   end
 
@@ -14,7 +13,7 @@ class Admin::PassengerCarsController < Admin::BaseController
     @passenger_car = @train.passenger_cars.build(passenger_car_params)
 
     if @passenger_car.save
-      redirect_to @train
+      redirect_to admin_train_path(@train)
     else
       render :new
     end
